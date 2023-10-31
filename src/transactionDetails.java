@@ -1,5 +1,5 @@
 public class transactionDetails {
-    private String transactionID;
+    private int transactionID;
     private String date;
     private double amount;
     private String transactionType;
@@ -9,11 +9,11 @@ public class transactionDetails {
 
     }
 
-    public String getTransactionID() {
+    public int getTransactionID() {
         return transactionID;
     }
 
-    public void setTransactionID(String transactionID) {
+    public void setTransactionID(int transactionID) {
         this.transactionID = transactionID;
     }
 

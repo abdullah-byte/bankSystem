@@ -1,5 +1,5 @@
 public class accountDetails {
-    private String accountNumber;
+    private int accountNumber;
     private String accountName;
     private double accountBalance;
     private String accountType;
@@ -9,11 +9,11 @@ public class accountDetails {
     }
 
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber) {
+    public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 

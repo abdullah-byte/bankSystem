@@ -27,7 +27,9 @@ public class Main {
 
                     System.out.println("To create an account: ");
                     System.out.println("Please enter your 7 digit account number");
-                    String accountNumber = scanner.nextLine();
+                    int accountNumber = scanner.nextInt();
+                    scanner.nextLine();
+
                     details.setAccountNumber(accountNumber);
 
                     System.out.println("Please enter your account name: ");
@@ -40,8 +42,9 @@ public class Main {
 
                     System.out.println("Please enter your account balance: ");
                     double accountBalance = scanner.nextDouble();
-                    details.setAccountBalance(accountBalance);
+                    scanner.nextLine();
 
+                    details.setAccountBalance(accountBalance);
                     bankSys.createAccount(details);
                     break;
 
@@ -63,7 +66,9 @@ public class Main {
                     transactionDetails transactionData = new transactionDetails();
                     System.out.println("To add transaction");
                     System.out.println("Please enter your transactionID");
-                    String transactionID = scanner.nextLine();
+                    int transactionID = scanner.nextInt();
+                    scanner.nextLine();
+
                     transactionData.setTransactionID(transactionID);
 
                     System.out.println("Please add date in the format DD-MM-YYYY:");
@@ -100,6 +105,11 @@ public class Main {
                     customerDetails customersData = new customerDetails();
 
                     System.out.println("To update customer info: ");
+                    System.out.println("Enter customer ID");
+                    int customerId = scanner.nextInt();
+                    scanner.nextLine();
+                    customersData.setCustomerID(customerId);
+
                     System.out.println("Enter customer name");
                     String name = scanner.nextLine();
                     customersData.setName(name);
@@ -107,10 +117,6 @@ public class Main {
                     System.out.println("Enter contact info");
                     String contactInfo = scanner.nextLine();
                     customersData.setContactInfo(contactInfo);
-
-                    System.out.println("Enter customer ID");
-                    int customerId = scanner.nextInt();
-                    customersData.setCustomerID(customerId);
 
                     bankSys.manageCustomerInfo(customersData);
                     break;

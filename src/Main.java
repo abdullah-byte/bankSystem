@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        bankSystem bankSys = new bankSystem();
+        BankingSystem bankSys = new BankingSystem();
 
         while (true){
             System.out.println("Bank account management System");
@@ -23,7 +23,7 @@ public class Main {
 
             switch (choice){
                 case 1:
-                    accountDetails details = new accountDetails();
+                    Account details = new Account();
 
                     System.out.println("To create an account: ");
                     System.out.println("Please enter your 7 digit account number");
@@ -51,7 +51,7 @@ public class Main {
                 case 2:
                     System.out.println("Please enter the account name of the account to find: ");
                     String accountFullName = scanner.nextLine();
-                    accountDetails accountInfo = bankSys.findAccount(accountFullName);
+                    Account accountInfo = bankSys.findAccount(accountFullName);
 
                     System.out.println("Account number: " + accountInfo.getAccountNumber());
                     System.out.println("Account name: " + accountInfo.getAccountName());
@@ -63,7 +63,7 @@ public class Main {
 
 
                 case 3:
-                    transactionDetails transactionData = new transactionDetails();
+                    Transaction transactionData = new Transaction();
                     System.out.println("To add transaction");
                     System.out.println("Please enter your transactionID");
                     int transactionID = scanner.nextInt();
@@ -102,7 +102,7 @@ public class Main {
                     break;
 
                 case 6:
-                    customerDetails customersData = new customerDetails();
+                    Customer customersData = new Customer();
 
                     System.out.println("To update customer info: ");
                     System.out.println("Enter customer ID");

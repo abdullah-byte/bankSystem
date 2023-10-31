@@ -1,11 +1,11 @@
-public class transactionDetails {
+public class Transaction {
     private int transactionID;
     private String date;
     private double amount;
     private String transactionType;
     private String description;
 
-    public transactionDetails() {
+    public Transaction() {
 
     }
 

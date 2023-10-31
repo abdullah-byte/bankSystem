@@ -1,10 +1,10 @@
-public class accountDetails {
+public class Account {
     private int accountNumber;
     private String accountName;
     private double accountBalance;
     private String accountType;
 
-    public accountDetails() {
+    public Account() {
 
     }
 

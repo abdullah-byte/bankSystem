@@ -1,9 +1,9 @@
-public class customerDetails {
+public class Customer {
     private String name;
     private String contactInfo;
     private int customerID;
 
-    public customerDetails() {
+    public Customer() {
 
     }
 

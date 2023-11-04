@@ -7,6 +7,10 @@ public class Customer {
 
     }
 
+    public Customer(String name, String contactInfo, int customerID){
+        
+    }
+
     public String getName() {
         return name;
     }

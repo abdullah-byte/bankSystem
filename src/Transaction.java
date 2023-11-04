@@ -9,6 +9,10 @@ public class Transaction {
 
     }
 
+    public  Transaction(int transactionID, String date, double amount, String transactionType, String description){
+
+    }
+
     public int getTransactionID() {
         return transactionID;
     }

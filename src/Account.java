@@ -8,6 +8,10 @@ public class Account {
 
     }
 
+    public Account(int accountNumber, String accountName, double accountBalance, String accountType){
+
+    }
+
 
     public int getAccountNumber() {
         return accountNumber;
